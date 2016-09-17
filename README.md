@@ -1,6 +1,7 @@
 # invcr
 
-Invoices in your Linux terminal.
+A quick PoC for easily invoice creation. It generates the invoice based on a few parameters entered in the terminal, and uploads the invoice to Google Drive.
+
 ## Profiles
 ### src/profiles/codemash.php
 ```
