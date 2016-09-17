@@ -1,6 +1,6 @@
 # invcr
 
-A quick PoC for easily invoice creation. It generates the invoice based on a few parameters entered in the terminal, and uploads the invoice to Google Drive.
+A quick PoC for easily invoice creation. It generates the invoice based on a few parameters entered in the terminal, and uploads the invoice to Google Drive. This is based on the Belgian guidelines for invoices.
 
 ## Profiles
 ### src/profiles/codemash.php
