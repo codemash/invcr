@@ -4,4 +4,4 @@ src/profiles
 !src/profiles/.gitkeep
 src/settings.php
 vendor
-src/composer.lock
+composer.lock
