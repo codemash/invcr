@@ -1,0 +1,13 @@
+{
+    "name": "matvp91/invoice",
+    "authors": [
+        {
+            "name": "Matthias Van Parijs",
+            "email": "matvp91@gmail.com"
+        }
+    ],
+    "require": {
+        "dompdf/dompdf": "^0.7.0",
+        "google/apiclient": "^2.0"
+    }
+}

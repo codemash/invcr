@@ -1,0 +1,7 @@
+src/google_credentials.json
+src/google_access_token.json
+src/profiles
+!src/profiles/.gitkeep
+src/settings.php
+vendor
+src/composer.lock

@@ -1,0 +1,31 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.w50 { width: 50%; }
+.w70 { width: 70%; }
+.w30 { width: 30%; }
+.w100 { width: 100%; }
+.c { padding: 0 !important; }
+
+.lr tr > td:last-child {
+	text-align: right;
+}
+
+table {
+	width: 100%;
+}
+
+table td {
+	padding: 2px 5px;
+}
+
+.footer {
+	position: fixed;
+	top: 800px;
+}
+
+.va-t {
+	vertical-align: top;
+}
