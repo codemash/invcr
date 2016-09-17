@@ -4,7 +4,7 @@ A quick PoC for easily invoice creation. It generates the invoice based on a few
 
 ## Profiles
 ### src/profiles/codemash.php
-```
+```php
 <?php
 
 return [
@@ -22,7 +22,7 @@ return [
 ];
 ```
 ### src/profiles/client.php
-```
+```php
 <?php
 
 return [
@@ -36,7 +36,7 @@ return [
 
 ## Settings
 ### src/settings.php
-```
+```php
 <?php
 
 // How to authorize Google Drive for uploads:
