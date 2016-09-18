@@ -11,8 +11,21 @@ use Dompdf\Dompdf;
 $pdf = new Dompdf();
 $pdf->setPaper('A4', 'portrait');
 
+function templateContent($dummy = false) {
+	ob_start();
+	if ($dummy) {
+		$rows = [
+			['desc' => 'Product', 'price' => 500]
+		];
+	}
+	include 'template.php';
+	$content = ob_get_contents();
+	ob_end_clean();
+	return $content;
+}
+
 if (php_sapi_name() !== 'cli') {
-	$pdf->loadHtml(file_get_contents('template.php'));
+	$pdf->loadHtml(templateContent(true));
 	$pdf->render();
 	$pdf->stream('tmp.pdf', ['Attachment' => false]);
 
@@ -281,11 +294,7 @@ $vars['sub_total_price'] = $sub_total_price;
 $vars['vat_price'] = $vat_price;
 $vars['total_price'] = $total_price;
 
-ob_start();
-include 'template.php';
-$content = ob_get_contents();
-ob_end_clean();
-
+$content = templateContent();
 foreach ($vars as $k => $v) {
 	$content = str_replace('{{ ' . $k . ' }}', $v, $content);
 }
